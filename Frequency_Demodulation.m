@@ -1,6 +1,4 @@
-%The frequency modulation(FM)waveform in time and frequency domain.
 %fm=35HZ,fc=500HZ,Am=1V,Ac=1V,B=10
-functionfmdm
 fs=10000;
 Ac=1;
 Am=1;

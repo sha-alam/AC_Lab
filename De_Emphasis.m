@@ -5,4 +5,4 @@ f3(f)=f;
 end
 subplot(2,1,1);
 plot(f3,y);
-title('de emphasis waveform');
+title('De emphasis waveform');

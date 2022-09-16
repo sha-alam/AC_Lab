@@ -1,0 +1,23 @@
+%Phase Modulation
+clc;
+t = 0: 0.0001: .2;
+Vm = 3; 
+Vc = 3; 
+fm = 7; 
+fc = 50; 
+m = 25; 
+v = Vm*sin(2*pi*fm*t);
+subplot(3,1,1);
+plot(t,v);
+xlabel('t ---->');ylabel('Amplitude ---->');
+title('Message Signal');
+c = Vc*sin(2*pi*fc*t);
+subplot(3,1,2);
+plot(t,c);
+xlabel('t ---->');ylabel('Amplitude ---->');
+title('Carrier Signal');
+p = Vc*sin((2*pi*fc*t) +( m.* v));
+subplot(3,1,3);
+plot(t,p);
+title('Phase Modulated Signal');
+xlabel('t ---->');ylabel('Amplitude ---->');

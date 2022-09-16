@@ -1,7 +1,8 @@
 clc
 close all;
 
-f1=10;
+%f1=10;
+f1=input("Input Frequency :");
 for f=1:50
     x(f)=(1/sqrt(1+(f1/f)^2));
     f2(f)=f;
